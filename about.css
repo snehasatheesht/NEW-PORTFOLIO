@@ -1,0 +1,88 @@
+*{
+	padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+.body-container.container-fluid{
+    background: linear-gradient(to top left, #993333 0%, #993399 100%);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#name{
+    text-align: left;
+    font-weight:bolder;
+    padding: 10px;
+    color:#fff;
+}
+#name a{
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu li{
+    list-style-type:none;
+	text-transform:uppercase;
+	color:#fff;
+	display:inline-block;
+    font-weight:bolder;
+    padding: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #ffffff;
+}
+.menu li:hover a{
+    border-bottom: 2px solid #fff;
+}
+.menu{
+    text-align: right;
+    background: #332f2f;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+.screen-height{
+    min-height: 100vh;
+}
+.menu ul{
+     margin:0;
+}
+.abt{
+    padding-top: 120px;
+}
+.about h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    opacity: .7 ;
+    color: snow;
+	text-shadow: 0 2px rgb(71, 51, 184), 0 3px #fffda0;
+    line-height: 80px;
+}
+@media only screen and (max-width:600px){ 
+    .menu a{
+        font-size: 12px;
+    }
+    #name a{
+        font-size: 14px;
+    }
+   
+    #name{
+        display: none;
+    }
+    .abt{
+        padding-top: 120px;
+    }
+}
